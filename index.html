@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wicked Willow: Ghost Town</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0b0b0b">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1 id="game-title">The Curse of Wicked Willow</h1>
+      <p id="game-subtitle">A Haunted Ghost Town Mystery</p>
+    </header>
+
+    <nav class="tabs">
+      <button data-view="home" class="active">Home</button>
+      <button data-view="map">Stations</button>
+      <button data-view="gallery">Gallery</button>
+      <button data-view="ritual">Group Ritual</button>
+    </nav>
+
+    <main id="view-home" class="view active">
+      <section class="card">
+        <h2>Welcome</h2>
+        <p>Scan QR codes around the party and solve puzzles to break Wicked Willow’s curse.</p>
+        <button id="btn-start">Begin</button>
+      </section>
+    </main>
+
+    <main id="view-map" class="view">
+      <section class="card"><h2>Stations</h2><div id="station-list"></div></section>
+    </main>
+
+    <main id="view-gallery" class="view">
+      <section class="card"><h2>Gallery</h2><div id="gallery-list"></div></section>
+    </main>
+
+    <main id="view-ritual" class="view">
+      <section class="card">
+        <h2>Group Ritual</h2>
+        <p>Clap or cheer to fill the meter!</p>
+        <div class="meter"><div id="meter-fill" style="width:0%"></div></div>
+        <button id="ritual-start">Start</button>
+        <button id="ritual-stop" disabled>Stop</button>
+        <p id="ritual-status"></p>
+      </section>
+    </main>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <button id="modal-close">×</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
