@@ -1,0 +1,18 @@
+{
+  "game": {
+    "title": "The Curse of Wicked Willow",
+    "subtitle": "A Haunted Ghost Town Mystery"
+  },
+  "stations": [
+    {"id":"1","title":"Ghost Town Gates","story":"You enter Ghost Town… What was the mayor’s title?","answer":["mayor"]},
+    {"id":"2","title":"Tavern of Whispers","story":"Whispers say Willow cursed all into spiders.","answer":["spider","a spider"]},
+    {"id":"3","title":"Cavern of Spells","story":"Carved into stone: 'TRUE LOVE HATE'. Type it.","answer":["true love hate"]},
+    {"id":"4","title":"Cabin of the Head","story":"Inside, the Mayor’s head whispers: The curse burns in ____.","answer":["fire"]},
+    {"id":"5","title":"The Final Spell","story":"Type the spell to break the curse.","answer":["by fire and light, we end the night.","by fire and light we end the night."]}
+  ],
+  "gallery":[
+    {"title":"Spiders Scatter","unlockStation":"2"},
+    {"title":"Cavern Glyphs Glow","unlockStation":"3"},
+    {"title":"Head Falls Silent","unlockStation":"5"}
+  ]
+}
